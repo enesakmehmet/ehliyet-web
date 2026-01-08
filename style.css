@@ -1,0 +1,218 @@
+:root {
+    --primary: #2563EB; /* Royal Blue */
+    --primary-dark: #1E40AF;
+    --secondary: #0F172A; /* Slate 900 */
+    --accent: #F472B6; /* Pink */
+    --text: #334155;
+    --light-bg: #F8FAFC;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header & Hero */
+header {
+    background-color: var(--white);
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero {
+    margin-top: 80px;
+    background: linear-gradient(135deg, var(--secondary) 0%, #1e1b4b 100%);
+    color: var(--white);
+    padding: 8rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #60A5FA, #A78BFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #CBD5E1;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-store {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.btn-store:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Features */
+.features {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background: #EFF6FF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Footer & Legal */
+footer {
+    background-color: var(--white);
+    padding: 4rem 2rem;
+    border-top: 1px solid #E2E8F0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    color: #64748B;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+/* Privacy & Terms Pages */
+.legal-content {
+    max-width: 800px;
+    margin: 120px auto 4rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.legal-content h1 {
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+.legal-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.legal-content p {
+    margin-bottom: 1rem;
+    color: #475569;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .footer-content { flex-direction: column; text-align: center; }
+    .footer-links a { margin: 0 1rem; }
+}
