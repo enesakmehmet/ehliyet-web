@@ -1,54 +1,209 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ehliyet al 2026 - Gizlilik Politikası</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gizlilik Politikası | Ehliyet 2026</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        h1 {
+            color: var(--text-dark);
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.025em;
+        }
+
+        .date {
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        h2 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-number {
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 5px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--text-dark);
+        }
+
+        .email-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            background-color: #1d4ed8;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>Gizlilik Politikası</h1>
-        <p><strong>Son Güncelleme:</strong> 08.01.2025</p>
+        <header>
+            <h1>Gizlilik Politikası</h1>
+            <div class="date">Son Güncelleme: 08 Ocak 2026</div>
+        </header>
 
-        <p>"Ehliyet al 2026" ("biz", "bize" veya "bizim") olarak, kullanıcılarımızın ("siz") gizliliğine önem veriyoruz. Bu Gizlilik Politikası, mobil uygulamamızı kullanırken bilgilerinizin nasıl toplandığını, kullanıldığını ve paylaşıldığını açıklar.</p>
+        <p><strong>Ehliyet al 2026</strong> ("biz", "bize" veya "bizim") olarak, kullanıcılarımızın ("siz") gizliliğine
+            ve güvenliğine büyük önem veriyoruz. Bu Gizlilik Politikası, mobil uygulamamızı kullanırken kişisel
+            verilerinizin nasıl işlendiğini şeffaf bir şekilde açıklar.</p>
 
-        <h2>1. Toplanan Bilgiler</h2>
-        <p>Uygulamamız aşağıdaki bilgileri toplayabilir ve işleyebilir:</p>
+        <h2><span class="section-number">1</span>Toplanan Bilgiler</h2>
+        <p>Hizmetimizi sağlamak ve geliştirmek için aşağıdaki veri türlerini toplayabiliriz:</p>
         <ul>
-            <li><strong>Kullanıcı İstatistikleri:</strong> Çözdüğünüz soru sayısı, yanlış/doğru cevaplar ve sınav başarı oranlarınız gibi anonim kullanım verileri.</li>
-            <li><strong>Cihaz Bilgileri:</strong> Uygulama hatalarını gidermek ve performansı artırmak için cihaz modeli ve işletim sistemi sürümü gibi teknik bilgiler.</li>
-            <li><strong>Reklam Verileri:</strong> Uygulama içi reklamları göstermek için Google AdMob tarafından toplanan tanımlayıcılar (IDFA, AAID).</li>
+            <li><strong>Kullanım Verileri:</strong> Çözülen sorular, test skorları ve uygulama içi etkileşimleriniz
+                (anonim olarak).</li>
+            <li><strong>Cihaz Bilgileri:</strong> Uygulama performansını izlemek için cihaz modeli, işletim sistemi
+                sürümü ve benzersiz cihaz tanımlayıcıları.</li>
+            <li><strong>Reklam Verileri:</strong> Google AdMob aracılığıyla size uygun reklamlar göstermek için
+                kullanılan tanımlayıcılar (IDFA/AAID).</li>
         </ul>
 
-        <h2>2. Bilgilerin Kullanımı</h2>
-        <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
+        <h2><span class="section-number">2</span>Bilgilerin Kullanımı</h2>
+        <p>Topladığımız verileri şu amaçlarla kullanırız:</p>
         <ul>
-            <li>Uygulama hizmetlerini sağlamak ve geliştirmek.</li>
-            <li>Kişiselleştirilmiş sınav istatistikleri sunmak.</li>
-            <li>Uygulama güvenliğini sağlamak.</li>
-            <li>İlgili reklamlar göstermek.</li>
+            <li>Size kişiselleştirilmiş bir sınav hazırlık deneyimi sunmak.</li>
+            <li>Uygulamanın teknik sorunlarını tespit edip gidermek.</li>
+            <li>Uygulama güvenliğini ve bütünlüğünü korumak.</li>
+            <li>Ücretsiz hizmetimizin devamlılığı için reklam gösterimi sağlamak.</li>
         </ul>
 
-        <h2>3. Üçüncü Taraf Hizmetleri</h2>
-        <p>Uygulamamızda aşağıdaki üçüncü taraf hizmetlerini kullanmaktayız:</p>
+        <h2><span class="section-number">3</span>Üçüncü Taraf Hizmetleri</h2>
+        <p>Uygulamamızın çalışması için güvenilir üçüncü taraf hizmet sağlayıcıları ile çalışıyoruz:</p>
         <ul>
-            <li><strong>Google AdMob:</strong> Reklam gösterimi için. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></li>
-            <li><strong>Expo & Railway:</strong> Uygulama altyapısı ve backend hizmetleri için.</li>
+            <li><strong>Google AdMob:</strong> Reklam hizmetleri. <a href="https://policies.google.com/privacy"
+                    target="_blank">Gizlilik Politikası</a></li>
+            <li><strong>Expo & Railway:</strong> Altyapı ve sunucu hizmetleri.</li>
         </ul>
 
-        <h2>4. Veri Güvenliği</h2>
-        <p>Verilerinizi korumak için endüstri standardı güvenlik önlemleri almaktayız. Ancak, internet üzerinden yapılan hiçbir iletimin %100 güvenli olmadığını unutmayın.</p>
+        <h2><span class="section-number">4</span>Veri Güvenliği</h2>
+        <p>Kişisel verilerinizin güvenliği bizim için önceliklidir. Verilerinizi korumak için sektör standardı şifreleme
+            ve güvenlik önlemleri uyguluyoruz.</p>
 
-        <h2>5. Çocukların Gizliliği</h2>
-        <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlardan kişisel bilgi toplamayız.</p>
+        <h2><span class="section-number">5</span>Çocukların Gizliliği</h2>
+        <p>Hizmetlerimiz 13 yaşın altındaki bireylere yönelik değildir. Bilerek çocuklardan kişisel veri toplamıyoruz.
+        </p>
 
-        <h2>6. Değişiklikler</h2>
-        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlandığı andan itibaren geçerli olacaktır.</p>
+        <h2><span class="section-number">6</span>İletişim</h2>
+        <p>Bu politika hakkında herhangi bir sorunuz veya öneriniz varsa, lütfen bizimle iletişime geçmekten çekinmeyin.
+        </p>
 
-        <h2>7. İletişim</h2>
-        <p>Bu politika hakkında sorularınız varsa, lütfen bizimle iletişime geçin:</p>
-        <p><a href="mailto:enesakmehmet7@gmail.com" class="contact-link">enesakmehmet7@gmail.com</a></p>
+        <div class="contact-box">
+            <h3>Bize Ulaşın</h3>
+            <p>Her türlü destek ve geri bildirim için:</p>
+            <a href="mailto:enesakmehmet7@gmail.com" class="email-link">enesakmehmet7@gmail.com</a>
+        </div>
     </div>
 </body>
+
 </html>
